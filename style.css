@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Smythe&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Smythe", system-ui;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: lightgray;
+}
+
+.container {
+  margin-top: 60px;
+  width: 600px;
+  height: 85vh;
+  background-color: #fff;
+}
+
+header {
+  background-image: url("https://s3-alpha-sig.figma.com/img/8453/64ec/acaeaea44c5e3a8cd7159c5d52f26662?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qjxCGiCpnt21P2zpACMdZjuCvxBm2sDzsqRcvedBtGyjttku5DCDa0zE9rN3aEy06lsCtbZfvR6v48b32dYARXeqVmcuTs7lZUgjGWFTxtZ2YpODjcwjL~jhnEP6ZmyWDlj-Q1kN-Y-pb6iY1P4JWFZLwdtr5d7nc3EHYiEgduUBV2iysYsctV9fSzw4iptvmPw~SpS~4s9lNonpoEyZ-npB0JWKzgtfkc9j7MwvzOpm4ePjQsZv1xA0Xt-JT9YUB4nnHhESWce8o1VPgBipX-ntnsRv-NxfRR3zMH4kDtDA-L0sfCQR3evouQhbGmu~lnP32W~d-6ODKi6z-KnDrQ__");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 180px;
+  padding: 20px;
+}
+
+header h1,
+header h2 {
+  margin-left: 50px;
+}
+
+header h1 {
+  font-size: 39px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+header h2 {
+  font-size: 22.42px;
+  line-height: 13.8px;
+  font-weight: 400;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
