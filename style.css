@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Smythe&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   font-family: "Smythe", system-ui;
@@ -16,9 +17,9 @@ body {
 }
 
 .container {
-  margin-top: 60px;
+  margin-top: 30px;
   width: 600px;
-  height: 85vh;
+  height: 93vh;
   background-color: #fff;
 }
 
@@ -41,7 +42,7 @@ header h1 {
   font-size: 39px;
   line-height: 24px;
   font-weight: 400;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 header h2 {
@@ -50,7 +51,121 @@ header h2 {
   font-weight: 400;
 }
 
+.menu-cards {
+  padding: 0 60px;
+}
+
 .card {
   display: flex;
   flex-direction: row;
+  border-bottom: 2px solid #d2d2d2;
+  justify-content: space-between;
+}
+
+.details-container {
+  display: flex;
+}
+
+.emoji {
+  display: flex;
+  width: 70px;
+  height: 89px;
+  font-size: 75px;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.details h2 {
+  font-size: 28px;
+  margin: 0;
+  line-height: 16.8px;
+}
+
+.details p {
+  color: #8b8b8b;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.details h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.btn {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 70px;
+  color: #3c3c3c;
+  background-color: #fff;
+  border: 1px solid #dedede;
+}
+
+.order {
+  display: none;
+}
+
+.items {
+  border-bottom: 2px solid #393333;
+}
+
+.order-items {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 0;
+  justify-content: space-between;
+}
+
+.order-items-container {
+  display: flex;
+}
+
+.order-items h3 {
+  font-size: 28px;
+}
+
+.order-items a {
+  text-decoration: none;
+  color: #bbbbbb;
+  margin-top: 35px;
+  margin-left: 10px;
+}
+
+.order-items p {
+  font-size: 20px;
+  margin-right: 55px;
+}
+
+.order h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.submit-btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  width: 508px;
+  height: 60px;
+  background-color: #16db99;
+  color: #fff;
+  border: none;
+  margin-left: 40px;
+  margin-bottom: 10px;
 }
