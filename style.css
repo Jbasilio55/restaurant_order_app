@@ -11,7 +11,6 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
   margin: 0;
   background-color: lightgray;
 }
@@ -118,6 +117,8 @@ header h2 {
 
 .order {
   display: none;
+  width: 508px;
+  margin: 0 auto;
 }
 
 .items {
@@ -126,13 +127,21 @@ header h2 {
 
 .order-items {
   display: flex;
-  margin-left: 60px;
   margin-top: 0;
   justify-content: space-between;
+  padding: 5px;
 }
 
 .order-items-container {
   display: flex;
+}
+
+.order-items h3,
+.order-items a,
+.order-items h2,
+.order-items p {
+  font-weight: 400;
+  margin: 0;
 }
 
 .order-items h3 {
@@ -142,18 +151,36 @@ header h2 {
 .order-items a {
   text-decoration: none;
   color: #bbbbbb;
-  margin-top: 35px;
+  margin-top: 8px;
   margin-left: 10px;
 }
 
 .order-items p {
   font-size: 20px;
-  margin-right: 55px;
+  margin-top: 10px;
 }
 
 .order h2 {
   font-size: 28px;
   text-align: center;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-price h2,
+.total h3 {
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.total-price h2 {
+  font-size: 28px;
+}
+.total-price h3 {
+  font-size: 20px;
 }
 
 .submit-btn {
@@ -166,6 +193,5 @@ header h2 {
   background-color: #16db99;
   color: #fff;
   border: none;
-  margin-left: 40px;
   margin-bottom: 10px;
 }
