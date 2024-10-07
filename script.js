@@ -26,13 +26,20 @@ const cards = menuArray
 
 menuCards.innerHTML = cards;
 
-const btn = document.querySelector(".btn");
 const order = document.querySelector(".order");
 const total = document.querySelector(".total");
 const container = document.querySelector(".container");
 const itemContainer = document.querySelector(".items");
+const submitBtn = document.querySelector(".submit-btn");
+const modalContainer = document.querySelector(".modal-container");
+const form = document.querySelector(".form");
+const completeContainer = document.querySelector(".order-completion");
+const complete = document.querySelector(".complete");
 
 menuCards.addEventListener("click", (e) => {
+  completeContainer.style.display = "none";
+  complete.textContent = "";
+
   let target = e.target;
   let parentTarget = target.parentElement;
   let id = Number(parentTarget.dataset.set);
@@ -45,18 +52,15 @@ menuCards.addEventListener("click", (e) => {
 
   if (cart.length > 0) {
     order.style.display = "block";
-    container.style.overflow = "scroll";
   }
 
   updateOrder();
 });
 
-console.log(cart);
 const remove = document.querySelector(".remove");
 
 order.addEventListener("click", (e) => {
   let id = Number(e.target.dataset.item);
-  console.log(cart);
 
   for (let item of cart) {
     if (item.id === id) {
@@ -70,6 +74,32 @@ order.addEventListener("click", (e) => {
   }
 
   updateOrder();
+});
+
+submitBtn.addEventListener("click", () => {
+  modalContainer.style.display = "block";
+});
+
+form.addEventListener("submit", (e) => {
+  const nameInput = document.getElementById("name");
+  const cardNumber = document.getElementById("cardNumber");
+  const cvv = document.getElementById("cvv");
+
+  e.preventDefault();
+  const formData = new FormData(form);
+  const name = formData.get("name");
+  console.log(formData);
+
+  modalContainer.style.display = "none";
+  cart = [];
+  updateOrder();
+  order.style.display = "none";
+  completeContainer.style.display = "flex";
+  complete.textContent = `Thanks, ${name}! your order is on its way!`;
+
+  nameInput.value = "";
+  cardNumber.value = "";
+  cvv.value = "";
 });
 
 function addItem(item) {

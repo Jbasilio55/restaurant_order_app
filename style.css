@@ -72,6 +72,7 @@ header h2 {
   height: 89px;
   font-size: 75px;
   justify-content: center;
+  margin-top: 36px;
 }
 
 .details {
@@ -79,7 +80,7 @@ header h2 {
   flex-direction: column;
   justify-content: center;
   margin-left: 40px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .details h2 {
@@ -110,7 +111,7 @@ header h2 {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  margin-top: 70px;
+  margin-top: 60px;
   color: #3c3c3c;
   background-color: #fff;
   border: 1px solid #dedede;
@@ -199,7 +200,7 @@ header h2 {
   margin-bottom: 10px;
 }
 
-.modal {
+.modal-container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 524px;
   height: 542.24px;
@@ -223,7 +224,7 @@ header h2 {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  margin: 40px auto;
+  margin: 50px auto;
 }
 
 .form input {
@@ -232,11 +233,12 @@ header h2 {
   font-weight: 400;
   line-height: 31.12px;
   margin: 0 auto;
-  width: 475.91px;
-  height: 71.3px;
+  width: 475px;
+  height: 70px;
   margin-bottom: 20px;
   border: 1.3px solid #757575;
   border-radius: 3.89px;
+  text-indent: 10px;
 }
 
 .inputs {
@@ -246,7 +248,7 @@ header h2 {
 
 .form input::placeholder {
   position: absolute;
-  left: 35px;
+  left: 25px;
 }
 
 .submit {
@@ -258,4 +260,30 @@ header h2 {
   gap: 0px;
   border-radius: 3.89px;
   opacity: 0px;
+}
+
+div .card {
+  height: 170px;
+}
+
+.order-completion {
+  background: #ecfdf5;
+  width: 504px;
+  height: 120px;
+  border-radius: 3px;
+  margin: 0 auto;
+  display: none;
+  margin-top: 20px;
+  display: none;
+  justify-content: center;
+}
+
+.order-completion h3 {
+  font-size: 30px;
+  color: #065f46;
+  width: 379px;
+  height: 17px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
 }

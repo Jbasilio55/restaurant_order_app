@@ -31,15 +31,38 @@
       </section>
       <section class="modal">
         <div class="modal-container">
-          <form action="" class="form">
+          <form method="get" class="form">
             <label for="">Enter Order Details</label>
             <div class="inputs">
-              <input type="text" placeholder="Enter your name" />
-              <input type="text" placeholder="Enter card number" />
-              <input type="text" placeholder="Enter CVV" />
+              <input
+                name="name"
+                type="text"
+                placeholder="Enter your name"
+                required
+                id="name"
+              />
+              <input
+                name="cardNumber"
+                type="text"
+                placeholder="Enter card number"
+                required
+                id="cardNumber"
+              />
+              <input
+                name="cvv"
+                type="text"
+                placeholder="Enter CVV"
+                required
+                id="cvv"
+              />
             </div>
             <button type="submit" class="submit">Pay</button>
           </form>
+        </div>
+      </section>
+      <section class="order-completion">
+        <div>
+          <h3 class="complete"></h3>
         </div>
       </section>
     </div>
