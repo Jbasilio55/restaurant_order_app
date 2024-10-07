@@ -51,11 +51,7 @@ menuCards.addEventListener("click", (e) => {
   updateOrder();
 });
 
-total.innerHTML += `<div class="total-price">
-                        <h2>Total Price:</h2>
-                        <h3>Price$$$</h3>
-                    </div>`;
-
+console.log(cart);
 const remove = document.querySelector(".remove");
 
 order.addEventListener("click", (e) => {
@@ -108,4 +104,13 @@ function updateOrder() {
   });
 
   itemContainer.innerHTML = orderItem.join("");
+
+  let totalPrice = cart.reduce((total, item) => {
+    return total + item.price * item.quantity;
+  }, 0);
+
+  total.innerHTML = `<div class="total-price">
+                        <h2>Total Price:</h2>
+                        <h3>$${totalPrice}</h3>
+                    </div>`;
 }

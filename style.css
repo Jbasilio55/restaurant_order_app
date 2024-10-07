@@ -181,6 +181,7 @@ header h2 {
 }
 .total-price h3 {
   font-size: 20px;
+  margin-right: 5px;
 }
 
 .submit-btn {
